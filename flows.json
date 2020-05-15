@@ -1,0 +1,89 @@
+[
+    {
+        "id": "b581bb82.578d48",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d2dd39d.d0f80c8",
+        "type": "inject",
+        "z": "b581bb82.578d48",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "7b058f55.a9dfb",
+                "e644965e.671e48"
+            ]
+        ]
+    },
+    {
+        "id": "1a2c16ef.ef56d9",
+        "type": "comment",
+        "z": "b581bb82.578d48",
+        "name": "",
+        "info": "",
+        "x": 360,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e12d5f6e.3e407",
+        "type": "link in",
+        "z": "b581bb82.578d48",
+        "name": "",
+        "links": [],
+        "x": 515,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b058f55.a9dfb",
+        "type": "debug",
+        "z": "b581bb82.578d48",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 320,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e644965e.671e48",
+        "type": "switch",
+        "z": "b581bb82.578d48",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
